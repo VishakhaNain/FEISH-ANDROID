@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_DashboardforPatient"
+            android:icon="@drawable/ic_dashboard_black"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_consultDoctor"
+            android:icon="@drawable/ic_control_point_black"
+            android:title="Consult Doctor" />
+        <item
+            android:id="@+id/nav_checkmsg"
+            android:icon="@drawable/ic_message_black"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_bookedappointment"
+            android:icon="@drawable/ic_message_black"
+            android:title="BookedAppointment" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_content_paste_black"
+            android:title="Add Report" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_local_phone_black_24dp"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

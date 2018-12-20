@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/patienr"/>
+
+    <TextView
+        android:id="@+id/textContentFriend"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/imageView3"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:drawablePadding="4dp"
+        android:backgroundTint="@color/colorAccent5"
+        android:layout_alignParentTop="true"
+        android:text="Amnbjhbjhbj"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+</RelativeLayout>

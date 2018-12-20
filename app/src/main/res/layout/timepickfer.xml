@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"
+        android:textColor="@android:color/white"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:background="@color/colorPrimary"/>
+
+    <com.takisoft.datetimepicker.widget.TimePicker
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/msg"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:background="#FFFFFF"
+        />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/ok"/>
+</RelativeLayout>

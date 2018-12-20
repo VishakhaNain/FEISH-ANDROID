@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".doctor.ServiceDetailActivity">
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<android.support.v7.widget.CardView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    android:padding="8dp"
+    android:background="@color/grey"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="6dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/doctor_images"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:id="@+id/servicelogo"
+                android:layout_weight="0.4"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:background="@color/colorAccent3"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:id="@+id/sertitle"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="LaL Path Clinic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/sercadd"
+                    android:textColor="@color/white"
+                    android:text=" Shop No-18, First Floor, B-Block Market, Sec-62, Noida, Uttar Pradesh "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:id="@+id/sermob"
+                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text=" 098910 46925"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent3"
+            android:text="Description :-"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/green"/>
+        <com.app.feish.application.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/desc"
+            android:layout_height="wrap_content"
+            android:textColor="@color/likeblack"
+            android:text="As one of the top pathology labs in  India, Dr Lal PathLabs has a very strong focus on hiring and retaining top quality manpower to drive our different departments within and outside the labs"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent3"
+            android:text="Add Working Hours :-"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/green"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/likeblack"
+              android:textStyle="bold"
+              android:textSize="15dp"
+              android:layout_marginLeft="10dp"
+              android:text="Timing"
+              />
+          <View
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:layout_marginTop="8dp"
+              android:layout_marginLeft="10dp"
+              android:background="@color/green"/>
+          <ListView
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:id="@+id/list"/>
+        <!--  <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textStyle="bold"
+                  android:textSize="15dp"
+
+                  android:text="Sunday"
+                  />
+              <com.app.feish.application.customfonts.MyTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textSize="14dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:text="09:00 AM - 07:00 PM "
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textStyle="bold"
+                  android:textSize="15dp"
+
+                  android:text="Monday"
+                  />
+              <com.app.feish.application.customfonts.MyTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textSize="14dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:text="09:00 AM - 07:00 PM "
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textStyle="bold"
+                  android:textSize="15dp"
+
+                  android:text="Tuesday"
+                  />
+              <com.app.feish.application.customfonts.MyTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/likeblack"
+                  android:textSize="14dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="10dp"
+                  android:text="09:00 AM - 07:00 PM "
+                  />
+
+
+
+          </LinearLayout>-->
+      </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/green"/>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:id="@+id/ll_pic"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:src="@drawable/ic_collections_black_24dp"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16dp"
+                  android:text="Add Photo"
+                  android:layout_gravity="center"
+                  android:textColor="@color/colorAccent2"/>
+          </LinearLayout>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:text="Add Working Hours"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/workingh"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/arrow"/>
+      </RelativeLayout>
+<GridView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnWidth="80dp"
+    android:padding="4dp"
+    android:layout_marginTop="10dp"
+    android:numColumns="4"
+    android:id="@+id/grid"
+  />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+</RelativeLayout>

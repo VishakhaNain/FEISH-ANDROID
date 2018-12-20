@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".doctor.PreviousPatientdetail"
+    tools:showIn="@layout/activity_previous_patientdetail">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_above="@+id/opensoapnote"
+    android:id="@+id/ll"
+    android:baselineAligned="false"
+ >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/home"
+            android:onClick="Home"
+            android:src="@drawable/ic_home_black_24dp"
+            android:background="@drawable/bg_1"
+            android:layout_height="45dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:padding="4dp"
+            android:background="@drawable/bg_2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textColor="@color/colorAccent2"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/patienr"
+                android:id="@+id/picpatient"
+                android:layout_gravity="center"
+                android:layout_height="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/patientname"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Patient Name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/patieentid"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Patient ID"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/bloodgrp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Blood Group : O+"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/patientmobno"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Mob No:945623148"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/patientgender"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Gender : Male"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/appodatetime"
+                    android:textColor="@color/pink"
+                    android:text="Date : 02/08/2018 02:00 PM"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/llaction"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="0dp"
+                android:drawableTint="@color/grey"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/appobooked"
+                android:drawableLeft="@drawable/valid"
+                android:layout_weight="1"
+                android:text="Booked"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:drawableTint="@color/grey"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/apporesch"
+                android:drawableLeft="@drawable/ic_add_alert_black_24dp"
+                android:layout_weight="1"
+                android:text="Reschedule"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Confirm"
+                android:layout_gravity="center"
+                android:id="@+id/appoconfirm"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/valid"
+                android:drawableTint="@color/grey"
+                android:background="@color/white"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:id="@+id/appocancel"
+                android:gravity="center"
+                android:drawableTint="@color/grey"
+                android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent2"
+            android:text="Blood Group : O+"/>
+        <TextView
+            android:layout_width="60dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/red"
+            android:id="@+id/adddetail"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:text="Add"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Write Soap Notes"
+        android:textColor="@color/white"
+        android:onClick="Soapnotes"
+        android:gravity="center"
+        android:id="@+id/opensoapnote"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_1"
+        android:layout_height="50dp" />
+</RelativeLayout>

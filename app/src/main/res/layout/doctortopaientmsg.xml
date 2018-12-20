@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="4dp"
+    app:cardElevation="2dp"
+    android:id="@+id/cardview"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:background="@color/orange"
+            android:src="@drawable/patienr"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent3"
+                android:textSize="16dp"
+                android:text="Miss Name XYZ"
+                android:id="@+id/patient_name"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.app.feish.application.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/msgdate"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:layout_height="wrap_content" />
+            <com.app.feish.application.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:text="9456897455"
+                android:id="@+id/msgtime"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <com.app.feish.application.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:text="k@gmail.com"
+                android:id="@+id/mainmsg"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent3"
+                android:text="Reply"
+                android:id="@+id/txt_reply"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_send"
+                android:drawableTint="@color/colorAccent3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

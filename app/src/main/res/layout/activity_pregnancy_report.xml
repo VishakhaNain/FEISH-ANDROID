@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient.PregnancyReport">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/information"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Pregnancy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/time_spinner"
+            android:entries="@array/pregnancytime"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/datewiseinfo"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Expected and End Date For Pregnancy"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_confirmation_number_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/startdate"
+                android:hint="Start Date"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_confirmation_number_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/enddate"
+                android:hint="End Date"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/selectmonth"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Month"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/month_spinner"
+            android:entries="@array/pregnancymonth"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/selectweek"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Week"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/week_spinner"
+            android:entries="@array/pregnancyweek"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <com.app.feish.application.customfonts.MyEditText
+        android:id="@+id/commentforwomen"
+        android:hint="Comment"
+        android:layout_marginTop="20dp"
+        android:lines="4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000"
+        android:background="@color/transparent"
+        android:padding="12dp"
+        android:drawablePadding="16dp"
+        />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/store"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

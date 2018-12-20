@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="4dp"
+    app:cardElevation="10dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_half"
+    android:layout_height="150dp">
+    <TextView
+        android:id="@+id/verificationtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="Verify by any one"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="You will be able to create password once you verify account" />
+
+</RelativeLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="8dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:text="Email"
+        android:drawablePadding="4dp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent3"
+        android:id="@+id/verifyemail" />
+
+    <Button
+        android:id="@+id/verifyphone"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorAccent3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:text="Phone"
+       />
+   </LinearLayout>
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/choice_pin_entry"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        app:pinLineColors="@color/colorAccent3"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent3"
+        app:pinAnimationType="popIn"
+        app:pinCharacterMask="*"
+        android:layout_centerVertical="true">
+    </com.alimuzaffar.lib.pin.PinEntryEditText>
+
+    <ProgressBar
+        android:id="@+id/choiceprogress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/resendotp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Resend Code"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:textColor="@color/white"
+        android:layout_below="@+id/choice_pin_entry" />
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

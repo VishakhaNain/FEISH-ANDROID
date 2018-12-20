@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_fooditems">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/foodsearch"
+        app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center"
+            android:id="@+id/cardmyrecipe"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="List My Created Recipe"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtor"
+            android:visibility="gone"
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="OR"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center"
+            android:id="@+id/cardgoback"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:textSize="16dp"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Go Back"/>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/allrecipe"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.app.feish.application.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:text="Find New Recipe"
+           />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/grocery"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/et_searchrecipe"
+            android:hint="Search Recipe"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:textColorHint="@color/darkblue"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:src="@drawable/grocery"
+                    android:tint="@color/white" />
+
+                <Spinner
+                    android:id="@+id/calories_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:entries="@array/calories" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_go"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:elevation="4dp"
+                    android:text="search"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/foodsearch"
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"/>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

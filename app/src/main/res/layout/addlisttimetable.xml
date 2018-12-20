@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent3"
+        android:weightSum="1"
+        android:padding="4dp"
+        android:layout_height="35dp">
+        <Spinner
+            android:id="@+id/spinner_weekday"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            />
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/et_time"
+            android:layout_width="0dp"
+            android:textSize="14dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:hint=" Add Time"
+            android:focusable="false"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:textColorHint="@android:color/white"
+            android:textColor="#fff"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:id="@+id/removetimetable"
+            android:background="@drawable/border1"
+            android:src="@drawable/minus"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/holo_green"
+            android:layout_marginTop="2dp"
+            android:textSize="17dp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:layout_weight="0.6"
+            android:id="@+id/foodname"
+            android:text="Add Recipe"/>
+        <Spinner
+            android:id="@+id/spinner_foodeattype"
+            android:entries="@array/Foodtypetime"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_height="40dp"
+            />
+    </LinearLayout>
+    <com.app.feish.application.customfonts.MyEditText
+        android:id="@+id/et_desc"
+        android:hint="Description"
+        android:textSize="14dp"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000"
+        android:background="@android:color/transparent"
+        />
+</LinearLayout>
+</android.support.v7.widget.CardView>

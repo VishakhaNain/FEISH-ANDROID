@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".doctor.AddWorkingHours"
+    tools:showIn="@layout/activity_add_working_hours">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="4dp"
+        android:background="@drawable/border1"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grey"
+        android:text="Add Working Hours"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/colorAccent3"
+                android:layout_gravity="center"/>
+    <Spinner
+        android:id="@+id/spinner_weekday"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/day"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/border1"
+        android:layout_height="50dp"
+        />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working Hours"
+            android:layout_marginTop="8dp"
+
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent3"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:onClick="Onclickb"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded"
+            android:text="Choose Time Range"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Open Time"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/s_time"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Close Time"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/e_time"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/darkblue"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:id="@+id/addwork"
+            android:gravity="center"
+            android:backgroundTint="@color/pink"
+            android:background="@drawable/rounded"
+            android:text="Add Working hours"/>
+    <com.appyvet.materialrangebar.RangeBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/rangesb"
+        android:layout_marginRight="16dp"
+        app:mrb_connectingLineColor="@color/colorAccent3"
+        app:mrb_pinColor="@color/colorAccent3"
+        app:mrb_connectingLineWeight="20dp"
+        app:mrb_pinMaxFont="10sp"
+        android:layout_gravity="center"
+        app:mrb_selectorBoundaryColor="@color/yellow"
+        app:mrb_selectorBoundarySize="2dp"
+        app:mrb_pinTextColor="#ACD123"
+        app:mrb_selectorSize="10dp"
+        app:mrb_temporaryPins="true"
+        app:mrb_tickEnd="12"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="1"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ListView
+                android:layout_width="0dp"
+                android:choiceMode="singleChoice"
+                android:id="@+id/list"
+                android:divider="#b5b5b5"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/dark_grey"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"/>
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+               <TextView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/darkblue"
+                   android:textSize="16dp"
+                   android:gravity="center"
+                   android:id="@+id/title"
+                   android:textStyle="bold"
+                   android:text="Working Hours"
+                   />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Open Time"
+                        />
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Close Time"
+                        />
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Options"
+                        />
+                </TableRow>
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/darkblue"
+                    android:layout_marginTop="5dp"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/listopen_time"
+                        android:text="Add"
+                        />
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:id="@+id/listclose_time"
+                        android:layout_weight="1"
+                        android:text="Add"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:id="@+id/updateworkhr"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_edit_black_24dp"
+                            android:background="@color/yellow"
+                            android:layout_height="20dp" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/deleteworkhrs"
+                            android:src="@drawable/ic_delete_black_24dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/green"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+</ScrollView>

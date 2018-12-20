@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/entry"
+            android:icon="@drawable/docentry"
+            android:title="Doctor Entry" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_Drservice"
+            android:icon="@drawable/service_24dp"
+            android:title="Service" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

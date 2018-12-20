@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.app.feish.application.customfonts.MyTextView
+        android:layout_width="wrap_content"
+        android:text="Sun"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:id="@+id/day"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+    <com.app.feish.application.customfonts.MyTextView
+        android:layout_width="wrap_content"
+        android:text="Sun"
+        android:layout_weight="1"
+        android:id="@+id/opentime"
+        android:padding="2dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"/>
+    <com.app.feish.application.customfonts.MyTextView
+        android:layout_width="wrap_content"
+        android:text="Sun"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:id="@+id/closetime"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"/>
+
+</LinearLayout>

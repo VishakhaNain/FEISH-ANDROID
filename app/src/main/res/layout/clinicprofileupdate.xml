@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img_back"
+            android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_gravity="center"
+                android:layout_height="80dp"
+                android:id="@+id/clinicimg"
+                android:src="@drawable/clinic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clinic Information"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="This is your clinic profile information,you canchange it anytime"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/form3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent2"
+            android:textSize="18dp"
+            android:id="@+id/Cownerupdate"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:text="Owner Details"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/GetFirstName"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Last Name"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetLastName"
+            android:textColor="#000"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Email Address"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetEmail"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Mobile number"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetMobile"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:text="Clinic Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_gravity="start"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ClinicName"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/GetClinicName"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Clinic Email Address"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetClinicEmail"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Clinic Mobile number"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetClinicMobile"
+            android:textColor="#000"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Clinic Address"
+
+            android:textColor="@color/colorAccent3"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/GetClinicAddress"
+            android:textColor="@color/colorAccent2"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="15dp"
+        android:id="@+id/UpdateClinicBtn"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:background="@drawable/rounded"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:textSize="15sp">
+
+    </Button>
+
+</LinearLayout>
+</ScrollView>

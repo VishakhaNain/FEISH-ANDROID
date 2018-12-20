@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.feish.application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission-group.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".doctor.Pharmacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.PatientDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.RegisterPatient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerificationChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.CommunicatetoDoc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assistant.AssistentLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assistant.AssistentProfileView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".clinic.DoctorsEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clinic.ClinicDoctorSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clinic.RegisterClinic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clinic.ClinicProfileUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clinic.ClinicUpdateProfile2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.SetupProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assistant.PatientEntry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assistant.AssistantDashbord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor.RegisterDoctor"
+            android:label="@string/title_activity_register_doctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.DoctorDashboard"
+            android:label="@string/title_activity_doctor_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.ConsultDoctor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.SearchDoctorList"
+            android:label="@string/title_activity_search_doctor_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.BloodDonor"
+            android:label="@string/title_activity_blood_donor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.HealthParameter"
+            android:label="@string/title_activity_health_parameter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.VitalSigns"
+            android:label="@string/title_activity_vital_signs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.MedicalHitoryp"
+            android:label="@string/title_activity_medical_hitoryp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.FamilyHistory"
+            android:label="@string/title_activity_family_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.Remainder"
+            android:label="@string/title_activity_remainder"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.Female"
+            android:label="@string/title_activity_female"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.Treatement"
+            android:label="@string/title_activity_treatement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.DietPlan"
+            android:label="@string/title_activity_diet_plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.PatientLikeMe"
+            android:label="@string/title_activity_patient_like_me"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.Createdietplan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.MyBookedappointment"
+            android:label="@string/title_activity_my_bookedappointment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.BookedAppointmetDetail"
+            android:label="@string/title_activity_booked_appointmet_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.AssistantDoc"
+            android:label="@string/title_activity_assistant_doc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor.ViewProfileDoctor"
+            android:label="@string/title_activity_view_profile_doctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.SetupProfileForDoctor"
+            android:label="@string/title_activity_setup_profile_for_doctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.DoctorMessage"
+            android:label="@string/title_activity_doctor_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".doctor.ServiceDoc" />
+        <activity
+            android:name=".doctor.PurchasePlan"
+            android:label="@string/title_activity_purchase_plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.DocAddPlan"
+            android:label="@string/title_activity_doc_create_plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.VitalandReport"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".doctor.CreatePlans"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.Encounters"
+            android:label="@string/title_activity_encounters"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".doctor.DrBookedAppointmetDetail" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".DoctorAddress"
+            android:label="@string/title_activity_doctor_address"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WebViewAcitivty" />
+        <activity
+            android:name=".Patient.AddHabit"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".doctor.ServiceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor.Precreption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Prede"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor.AddWorkingHours"
+            android:label="@string/title_activity_add_working_hours"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.CompletePtientdetail"
+            android:label="@string/title_activity_complete_ptientdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.PreviousPatientdetail"
+            android:label="@string/title_activity_previous_patientdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DoctorCompleteProfile"
+            android:label="@string/title_activity_doctor_complete_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.Drreviewrating"
+            android:label="@string/title_activity_drreviewrating"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".doctor.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Assistant.CreateEncounters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.PatientPurchasePlan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.PatientMessageActivity"
+            android:label="@string/title_activity_patient_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.FindRecipe"
+            android:label="@string/title_activity_find_recipe"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.BookNewAppointment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor.DoctorPackageDetail"
+            android:label="@string/title_activity_doctor_package_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.Allreports"
+            android:label="@string/title_activity_allreports"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Notification.Notificationdatasend"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.app.feish.application.fcm_TARGET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaymentDetail.PayUMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentDetail.PayUMoneyActivityforPurchasePlan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentDetail.PayUMoneyActivityforDoctorPackage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient.PuchaseDoctorPlan"
+            android:label="@string/title_activity_puchase_doctor_plan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.DeleteActionActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.app.feish.application.Patient.CustomFloatingViewService" />
+
+        <service
+            android:name=".Patient.CustomFloatingViewService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Patient.ChatBotForPatient"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".clinic.ClinicDashboard"
+            android:label="@string/title_activity_main6"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient.TimingForAppointment"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".clinic.ClinicWorkingHours" />
+        <activity android:name=".Patient.FemaleInfo" />
+        <activity android:name=".Patient.PregnancyReport" />
+        <activity android:name=".Patient.InformationPregnancy" />
+        <activity android:name=".Patient.ViewWorkout" />
+        <activity android:name=".Patient.AdditionalInfoWorkout" />
+        <activity android:name=".Patient.ListViewOfPregnnacyReport" />
+        <activity android:name=".Patient.MenstruationReport"></activity>
+    </application>
+
+</manifest>

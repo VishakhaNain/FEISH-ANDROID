@@ -1,0 +1,614 @@
+<resources>
+    <string name="app_name">Feish App</string>
+    <string name="title_activity_register_doctor">RegisterDoctor</string>
+    <string-array name="salutation_spinner">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss</item>
+        <item>Dr.</item>
+
+    </string-array>
+
+
+    <string-array name="number_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+
+    </string-array>
+    <string-array name="salutation_spinner2">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss</item>
+    </string-array>
+    <string name="appointment">Appointments</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="message">Messages</string>
+    <string name="apikey">AIzaSyDVQe867STBwzgP0f4Fw0ZbjetIRg2lrP0</string>
+    <string name="apikeyanroid">AIzaSyAuBdY50qxkNZ6FycoRaQgLG__TGfmRPt8</string>
+    <string name="sopanote"><u>Prescription</u></string>
+    <string name="time">09:00 AM \n 07:00 PM</string>
+    <string-array name="identity_proof_entries">
+        <item>Select Identity</item>
+        <item>Driving License</item>
+
+        <item>Aadhaar Card</item>
+        <item>Passport</item>
+        <item>Pan Card</item>
+    </string-array>
+    <string-array name="service_name">
+        <item>Select</item>
+        <item>Service Name1</item>
+        <item>Service Name 2</item>
+        <item>Service Name 3</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="plan_type">
+        <item>Not Defined</item>
+        <item>Visit</item>
+        <item>Online</item>
+    </string-array>
+    <string-array name="yesno">
+        <item>Current Medication</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Assistant">
+        <item>Nurse</item>
+        <item>Receptionist</item>
+    </string-array>
+    <string-array name="day">
+        <item>Select Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thusday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="Foodtypetime">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Dinner</item>
+    </string-array>
+    <string-array name="demo">
+        <item>Select Appointment</item>
+
+
+    </string-array>
+    <string-array name="demo_procedure">
+        <item>Procedure Name</item>
+
+
+    </string-array>
+
+    <string-array name="Blood_spinner">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="state_spinner">
+        <item>Uttar Pradesh</item>
+        <item>Madhya Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+
+    </string-array>
+    <string-array name="con_spinner">
+        <item>India</item>
+
+
+    </string-array>
+    <string-array name="city_spinner">
+        <item>Varanasi</item>
+        <item>Bhopal</item>
+        <item>Guwahati</item>
+        <item>Patna</item>
+
+    </string-array>
+
+    <string-array name="doctorspecialist">
+
+        <item>Allergology</item>
+        <item>Andrology</item>
+        <item>Anesthesia</item>
+        <item>Angiology</item>
+        <item>Biomedicine</item>
+        <item>Dermatology</item>
+        <item>DisasterMedicine</item>
+    </string-array>
+    <string-array name="diesename">
+
+        <item>Allergy</item>
+        <item>Appendicitis</item>
+        <item>Common Cold</item>
+        <item>Ovarian Cancer</item>
+        <item>Rheumatoid Arthritis</item>
+        <item>Hemophilia</item>
+        <item>Menopause</item>
+    </string-array>
+    <string-array name="med_type">
+
+        <item>Liquid</item>
+        <item>tablet</item>
+    </string-array>
+
+    <string-array name="quan">
+
+        <item>2 Spoon</item>
+        <item>3 Spoon</item>
+        <item>1 Tab</item>
+        <item>5 Spoon</item>
+    </string-array>
+
+    <string-array name="Unit">
+
+        <item>Select Unit</item>
+        <item>Packets</item>
+        <item>MI</item>
+        <item>Unit</item>
+        <item>Hrs</item>
+        <item>Minutes</item>
+    </string-array>
+    <string-array name="TimePeroid">
+
+        <item>Select</item>
+        <item>Per Day</item>
+        <item>Per Week</item>
+        <item>Per Month</item>
+
+    </string-array>
+    <string-array name="Years">
+        <item>Years</item>
+        <item>1950</item>
+        <item>1951</item>
+        <item>1952</item>
+        <item>1953</item>
+        <item>1954</item>
+        <item>1955</item>
+        <item>1956</item>
+        <item>1957</item>
+        <item>1958</item>
+        <item>1959</item>
+        <item>1960</item>
+        <item>1961</item>
+        <item>1962</item>
+        <item>1963</item>
+        <item>1964</item>
+        <item>1965</item>
+        <item>1966</item>
+        <item>1967</item>
+        <item>1968</item>
+        <item>1969</item>
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+
+    </string-array>
+    <string name="FB_id">1548404058548729</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="login">Login</string>
+    <string name="username">UserName</string>
+    <string name="language">Language</string>
+    <string name="logout">Logout</string>
+    <string name="registration_details">Registration Details</string>
+    <string name="register">Register</string>
+    <string name="user_profile_picture">User Profile </string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_address">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Dont Have an Account</string>
+    <string name="android_easily_logo">Logo</string>
+    <string name="androideasily_in">Easily in</string>
+    <string name="name_static">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email_address_static">Email</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+    <string name="registered_emailid">Enter Email</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="discuss_about_header">Select One</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="register_here">Register Here.</string>
+    <!-- Profile strings-->
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="qualification">Qualification</string>
+    <string name="address">Address</string>
+    <string name="height">Height</string>
+    <string name="bmi">BMI</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="married">Married</string>
+    <string name="unmarried">Unmarried</string>
+
+    <string-array name="occupation">
+        <item>Occupation</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="ethnicity">
+        <item>ETHNICITY</item>
+        <item>Indian</item>
+        <item>East Asian</item>
+        <item>South Asian</item>
+    </string-array>
+    <string-array name="vitalsigns">
+
+        <item>Blood Pressure</item>
+        <item>Temperature</item>
+        <item>Pulse Rate</item>
+        <item>Respiratory</item>
+        <item>Blood glocose</item>
+        <item>pulse oximetry</item>
+        <item>Glasgow Coma Scale</item>
+        <item>Breathlessness</item>
+    </string-array>
+    <string-array name="remain_type">
+
+        <item>One Time</item>
+        <item>Repeated</item>
+    </string-array>
+    <string-array name="number">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="relationship">
+
+        <item>Mother In Law</item>
+        <item>Uncle</item>
+        <item>Grand Father</item>
+        <item>Grand Mother</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="condition">
+
+        <item>Condition</item>
+        <item>Common Cold</item>
+        <item>Flu</item>
+    </string-array>
+    <string-array name="foodtype">
+        <item>FRUITS</item>
+        <item>VEGETABLES AND LEGUMES</item>
+        <item>BAKED GOODS</item>
+        <item>SOUPS, SAUCES, AND GRAVIES</item>
+        <item>MEAT</item>
+        <item>RECIPE</item>
+    </string-array>
+    <string-array name="foodname">
+        <item>Apple</item>
+        <item>Juice</item>
+        <item>Poha</item>
+        <item>Dosha</item>
+
+    </string-array>
+    <string-array name="calories">
+        <item>SELECT CALORIES</item>
+        <item>0-100</item>
+        <item>100-200</item>
+        <item>200-300</item>
+        <item>300-400</item>
+        <item>400-500</item>
+        <item>500-600</item>
+        <item>more than 600</item>
+
+    </string-array>
+    <string-array name="staus">
+        <item>Select</item>
+        <item>Healthy</item>
+        <item>Under Treatment</item>
+        <item>Died</item>
+    </string-array>
+
+
+    <string-array name="pregnancytime">
+
+        <item>First Time</item>
+        <item>Second Time</item>
+        <item>Third Time</item>
+        <item>Fourth Time</item>
+        <item>Fifth Time</item>
+    </string-array>
+
+    <string-array name="pregnancymonth">
+
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+        <item>Seventh</item>
+        <item>Eighth</item>
+        <item>Nineth</item>
+    </string-array>
+
+    <string-array name="pregnancyweek">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+
+    </string-array>
+
+
+    <string-array name="workoutweek">
+
+        <item>1-4</item>
+        <item>5-9</item>
+        <item>10-14</item>
+        <item>15-19</item>
+        <item>19-23</item>
+        <item>24-27</item>
+        <item>27-32</item>
+        <item>33-36</item>
+        <item>above</item>
+    </string-array>
+
+
+    <string-array name="workout">
+
+        <item>Brisk walking</item>
+        <item>Swimming</item>
+        <item>Stationary cycling</item>
+        <item>Yoga</item>
+        <item>Low-impact aerobics</item>
+        <item>Squatting and pelvic tilts</item>
+        <item> step or elliptical machines</item>
+        <item> jogging</item>
+        <item>above</item>
+    </string-array>
+
+    <string name="radio_doctor">Doctor</string>
+    <string name="radio_patient">Patient</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_doctor_dashboard">DoctorDashboard</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Clinic DashBoard</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_doctor_list">SearchDoctorList</string>
+    <string name="title_activity_blood_donor">BloodDonor</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_health_parameter">HealthParameter</string>
+    <string name="title_activity_vital_signs">VitalSigns</string>
+    <string name="title_activity_medical_hitoryp">MedicalHitoryp</string>
+    <string name="title_activity_family_history">FamilyHistory</string>
+    <string name="title_activity_remainder">Remainder</string>
+    <string name="title_activity_female">Female</string>
+    <string name="title_activity_treatement">Treatement</string>
+    <string name="title_activity_diet_plan">DietPlan</string>
+    <string name="title_activity_patient_like_me">PatientLikeMe</string>
+    <string name="title_activity_my_bookedappointment">MyBookedappointment</string>
+    <string name="title_activity_booked_appointmet_detail">BookedAppointmetDetail</string>
+    <string name="title_activity_assistant_doc">AssistantDoc</string>
+    <string name="tab_text_1">Positive Feedback \n 30</string>
+    <string name="tab_text_2">Positive Feedback \n 10</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_view_profile_doctor">ViewProfileDoctor</string>
+    <string name="title_activity_setup_profile_for_doctor">SetupProfileForDoctor</string>
+    <string name="title_activity_doctor_message">DoctorMessage</string>
+    <string name="title_activity_purchase_plan">PurchasePlan</string>
+    <string name="purchaseplan">ADD NEW PLAN:
+
+Our site gives doctors the flexibility to create same/different fee plans for various services provided by them.
+
+These plans will be visible to the patient when they try to book an appointment with you and only after buying the plan, they will be able to take an appointment with you.
+
+To create/add new plan, enter name of service that you have created in “Service name”.
+
+If you have not created any service, go to “Services” option in the dashboard and create services using “Add service” option.
+
+For help regarding ‘How to create Services’, you can go through help box provided in services.
+
+Enter name of the plan in “Plan name” box (for e.g., monthly plan, weekly plan, platinum plan or any other name chosen by you).
+
+Set plan price in “Plan price” box.
+
+Choose plan type from drop down provided in “Plan type”.  It may be online consultation, visit to your clinic or you may choose to not define it.
+
+Enter further details about the plan in “Plan details”.
+
+Enter the number of valid visits the patient can avail if he buys a particular plan.  Enter this information in “Valid visits” (For e.g., the number of visits for a plan can be set as 6 or 7 or any other number).
+
+The validity of a plan can be set in “Validity”, mention the number of days you want the plan to be valid for.  For e.g. if you have set the validity as 30 days, beyond 30 days the plan will become invalid automatically and the patient will have to buy have a new plan from you.
+
+Finally, click on “Add plan” button at the bottom to complete the action.</string>
+    <string name="title_activity_doc_create_plan">DocCreatePlan</string>
+    <string name="title_activity_encounters">Encounters</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_doctor_address">Map</string>
+    <string name="title_activity_add_working_hours">AddWorkingHours</string>
+    <string name="title_activity_complete_ptientdetail">CompletePtientdetail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_previous_patientdetail">PreviousPatientdetail</string>
+    <string name="title_activity_doctor_complete_profile">DoctorCompleteProfile</string>
+    <string name="title_activity_drreviewrating">Drreviewrating</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_patient_message">PatientMessageActivity</string>
+    <string name="title_activity_fooditems">Fooditems</string>
+    <string name="title_activity_find_recipe">FindRecipe</string>
+    <string name="title_activity_doctor_package_detail">DoctorPackageDetail</string>
+    <string name="title_activity_allreports">Allreports</string>
+    <string name="title_activity_puchase_doctor_plan">PuchaseDoctorPlan</string>
+
+
+    <string name="chathead_content_title">Demo Chat: Active</string>
+    <string name="content_text">Demo running.</string>
+    <string name="mail_content_title">Demo Customize: active</string>
+    <string name="chathead_click_message">Click</string>
+    <string name="delete_demo">Delete Demo</string>
+    <string name="show_demo">Show Simple FloatingView</string>
+    <string name="show_customized_demo">Show Customized FloatingView</string>
+    <string name="show_settings">Initial Settings</string>
+    <string name="permission_denied">Overlay permission not granted.</string>
+    <string name="mail_address">example@example.com</string>
+    <string name="mail_title">Title</string>
+    <string name="mail_content">Message</string>
+    <string name="touch_finished_position" formatted="false">Current position (%d,%d)</string>
+    <string name="deleted_soon">FloatingView will be deleted soon.</string>
+    <string name="finish_deleted">FloatingView has been deleted.</string>
+    <string name="default_floatingview_channel_id">default_floatingview_channel</string>
+    <string name="default_floatingview_channel_name">Default Channel</string>
+    <string name="title_activity_main6">Main6Activity</string>
+
+</resources>

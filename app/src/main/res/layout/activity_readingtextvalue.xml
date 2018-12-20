@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient.VitalandReport">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_view_date"
+        android:text="No Text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_view_name"
+        android:text="No Text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_view_gender"
+        android:text="No Text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent3"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/favicon"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/reportname"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="DiagnosticReport"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reportstatus"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Status: Final"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/scan"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Scan Report"
+                android:onClick="OpenActivityScanreport"
+                android:textStyle="bold"
+             />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lightgray">
+        <TableRow
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent5"
+                android:text="Name: "/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/patient_name"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/darkblue"
+                android:text=" Patient Name "/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="@color/colorAccent5"
+                android:text="Gender: "/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/patient_gen"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/darkblue"
+                android:text="M"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent5"
+                android:text="Blood Grp: "/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/patient_blood"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/darkblue"
+                android:text="O+"/>
+        </TableRow>
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:background="@color/lightgray"
+        android:padding="4dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent5"
+            android:text="Effect_Time: "/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/effdatetime"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/darkblue"
+            android:text=" Patient Name "/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@color/colorAccent5"
+            android:text="Issued Date: "/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/issuedate"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/darkblue"
+            android:text="M"/>
+
+    </LinearLayout>
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:id="@+id/recyclerview"
+      android:layout_height="match_parent"/>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

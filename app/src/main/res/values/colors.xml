@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#108b94</color>
+    <color name="colorPrimaryDark">#204B60</color>
+    <color name="colorAccent">#2BD5A2</color>
+    <color name="transparent">#c4e6e7e6</color>
+    <color name="transparent1">#56b1b1b1</color>
+    <color name="colorAccent1">#5c9fec</color>
+    <color name="colorAccent2">#286ebe</color>
+    <color name="colorAccent5">#0072BC</color>
+    <color name="tcolorAccent5">#9e0072bc</color>
+    <color name="tcolorAccent2">#da245fa3</color>
+    <color name="skyblue">#86d7e6</color>
+    <color name="skyblue1">#86d7e6</color>
+     <color name="likeblack">#e3525253</color>
+    <color name="colorAccent3">#108b94</color>
+    <color name="tcolorAccent3">#d90f7f87</color>
+    <color name="white1">#bbffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#e1e0e0</color>
+    <color name="trans">#7d979797</color>
+    <color name="dark_grey">#cfcfcf</color>
+    <color name="holo_green">#669900</color>
+    <color name="tholo_green">#bb578300</color>
+    <color name="yellow">#fab505</color>
+    <color name="puple">#c733de</color>
+    <color name="lightorange">#fdf2df</color>
+    <color name="lightorangedark">#ebd6ab</color>
+    <color name="orange">#eaad43 </color>
+    <color name="bluelight">#49acd5</color>
+    <color name="pink">#fe104d</color>
+    <color name="red">#d10535</color>
+    <color name="tpink">#d3e20d44</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="tdeeppurple">#da6940da</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="tgreen">#b202a38d</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="my_spinner_text_color">#fff</color>
+
+
+
+
+
+
+    <color name="bg_edittext">#5D6D7E</color>
+    <color name="edittext_background">#F5F5F5</color>
+    <color name="chat_screen_color">#34495E</color>
+    <color name="bg_color_sent_msg">#FBFCFC</color>
+
+</resources>
