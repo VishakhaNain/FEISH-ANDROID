@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Service Name"
+        android:textStyle="bold"
+        android:id="@+id/sername"
+        android:padding="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pink"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txt_bookapp1"
+            android:gravity="center"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:text="Book Appointment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Noida Sector 62"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/serloc"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawableTint="@color/darkblue"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkblue"/>
+
+
+
+    </RelativeLayout>
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:clickable="false"
+        android:layout_marginBottom="8dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:id="@+id/ratingbar"
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small" />
+
+   <GridView
+       android:layout_width="match_parent"
+       android:numColumns="7"
+       android:id="@+id/gridsdate"
+       android:layout_height="80dp"/>
+</LinearLayout>
+</android.support.v7.widget.CardView>

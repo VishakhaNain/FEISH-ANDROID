@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_header_1"
+        android:padding="4dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:background="@drawable/doctor_images"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:id="@+id/drname"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent1"
+                android:text="Dr Doctor Name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent1"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:drawableTint="@color/colorAccent1"
+                android:gravity="center"
+                android:id="@+id/sernumber"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent1"
+                android:text=""/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="2dp"
+        android:id="@+id/pedetail"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_below="@+id/header"
+        android:background="@drawable/bg_header_1"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:id="@+id/appodate"
+        android:text="Appo Date : Name "/>
+        <com.app.feish.application.customfonts.MyRegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:id="@+id/appotime"
+            android:text="Appo Time : Name "/>
+</RelativeLayout>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:id="@+id/appoid"
+        android:text="Appointment ID : 102"/>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:id="@+id/patientid"
+        android:text="Patient ID : 105"/>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:id="@+id/patientname"
+        android:text="Patient Name : Name "/>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:id="@+id/patientadd"
+        android:text="Patient Location : Noida "/>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pink"
+        android:id="@+id/entrytimetxt"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btn_entry"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Entry" />
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deeppurple"
+        android:padding="8dp"
+        android:id="@+id/token"
+        android:text=""/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentLayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp">
+       <View
+           android:layout_width="4dp"
+           android:background="@color/colorAccent1"
+           android:layout_height="match_parent"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/colorAccent1"
+           android:textStyle="bold"
+           android:textSize="17dp"
+           android:padding="8dp"
+           android:text="Fee Payment"/>
+
+
+   </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <com.app.feish.application.customfonts.MyRegulerText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pink"
+        android:padding="8dp"
+        android:id="@+id/feedetail"
+        android:text="Rs 200/- Session"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="40dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cashpay"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="2dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_gravity="center"
+            android:layout_height="15dp"
+            android:src="@color/holo_green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deeppurple"
+            android:padding="8dp"
+            android:text="Cash Payment"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardpay"
+            app:cardCornerRadius="2dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_gravity="center"
+            android:layout_height="15dp"
+            android:src="@color/holo_green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deeppurple"
+            android:padding="8dp"
+            android:text="Card Payment"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardpackageplan"
+            app:cardCornerRadius="2dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="15dp"
+                    android:layout_gravity="center"
+                    android:layout_height="15dp"
+                    android:src="@color/holo_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deeppurple"
+                    android:padding="8dp"
+                    android:text="Package"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fappid"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent3"
+        android:text="Enter Appointment ID"
+        android:id="@+id/textView8" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_trans"
+        android:orientation="horizontal">
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/verifyemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Appointment ID"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:textColorHint="@android:color/black"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:drawableTint="@android:color/darker_gray"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="16dp"
+            />
+        <ImageView
+            android:id="@+id/btnSpeak"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:onClick="getSpeechInput"
+            android:src="@drawable/ic_mic"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/verifysubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Find" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/verifyemailprogress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

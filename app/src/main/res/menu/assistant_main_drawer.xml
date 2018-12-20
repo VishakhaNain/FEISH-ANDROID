@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_DashboardforPatient"
+            android:icon="@drawable/ic_dashboard_black"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_patiententry"
+            android:icon="@drawable/diet_plan"
+            android:title="Patient Entry" />
+
+
+        <item
+            android:id="@+id/nav_Drpatient"
+            android:icon="@drawable/ic_dashboard_black"
+            android:title="Patient" />
+
+        <item
+            android:id="@+id/nav_checkmsg"
+            android:icon="@drawable/ic_message_black"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_bookedappointment"
+            android:icon="@drawable/pateint"
+            android:title="Encounters" />
+
+        <item
+            android:id="@+id/createencounters"
+            android:icon="@drawable/pateint"
+            android:title="Create Encounters" />
+
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Profile View" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

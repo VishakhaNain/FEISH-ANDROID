@@ -1,0 +1,363 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:id="@+id/addsigns"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <com.app.feish.application.customfonts.MyRegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent3"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Remainder"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_confirmation_number_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/title_sub"
+                android:hint="Subject"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/desc"
+            android:hint="Description"
+            android:layout_marginTop="10dp"
+            android:lines="4"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="#000"
+            android:background="@color/transparent"
+            android:padding="12dp"
+            android:drawablePadding="16dp"
+            />
+        <CheckBox
+            android:id="@+id/alarm_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is Remainder" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_isremainder"
+android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/occurence_spinner"
+                android:entries="@array/remain_type"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:paddingTop="8sp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/date_button"
+                android:layout_weight="2"
+                android:layout_width="0sp"
+                android:text="Pick Date"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+              />
+
+            <Button
+                android:id="@+id/time_button"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_width="0sp"
+                android:text="Pick Time"
+                android:background="@color/colorAccent3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/forrepeated"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:background="@color/colorAccent"
+                            android:src="@drawable/ic_confirmation_number_black_24dp"
+                            android:tint="@color/white"
+                            android:padding="8dp"
+                            android:layout_height="40dp" />
+                        <com.app.feish.application.customfonts.MyEditText
+                            android:id="@+id/edate"
+                            android:hint="remainder_e_date"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@android:color/black"
+                            android:textColor="#000"
+                            android:background="@color/transparent"
+                            android:padding="12dp"
+                            android:drawablePadding="16dp"
+                            />
+                </LinearLayout>
+               <!-- <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/retime"
+                    android:layout_marginTop="10dp"
+                    android:hint="remainder time"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />-->
+                <RadioGroup
+                    android:id="@+id/radio_rtype"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/radioweekday"
+                            android:buttonTint="@color/colorAccent5"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent5"
+                            android:text="Week Days"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radiodatewise"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorAccent5"
+                            android:textColor="@color/colorAccent5"
+                            android:layout_height="wrap_content"
+                            android:text="Date Wise" />
+
+                        <RadioButton
+                            android:id="@+id/radiohours"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorAccent5"
+                            android:textColor="@color/colorAccent5"
+                            android:layout_height="wrap_content"
+                            android:text="Hours" />
+
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="4dp"
+                    android:id="@+id/ll_weekdayscheck"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox_mon"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                        android:id="@+id/checkBox_tues"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                    android:id="@+id/checkBox_wed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="W"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                        android:id="@+id/checkBox_thus"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Th"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                        android:id="@+id/checkBox_fri"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                        android:id="@+id/checkBox_sat"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Sa"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <CheckBox
+                        android:id="@+id/checkBox_sun"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+
+                    <com.app.feish.application.customfonts.MyEditText
+                        android:id="@+id/monthdate"
+                        android:hint="month date"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        android:textColor="#000"
+                        android:background="@color/transparent"
+                        android:padding="12dp"
+                        android:drawablePadding="16dp"
+                        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llhours"
+    android:visibility="gone"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="Select Interval"/>
+                <Spinner
+                    android:id="@+id/hoursinterval_spinner"
+                    android:entries="@array/number"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_height="50dp"
+                    />
+</LinearLayout>
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/intervalhours"
+                    android:layout_marginTop="10dp"
+                    android:hint="Hours"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/save"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded"
+            android:textColor="@color/white"
+            android:text="Save"/>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

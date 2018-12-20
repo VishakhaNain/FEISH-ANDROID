@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient.InformationPregnancy">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/information"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Workout Week "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/workout_spinner"
+            android:entries="@array/workoutweek"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Select Workout  "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/workoutexcercise_spinner"
+            android:entries="@array/workout"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/viewworkout"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:text="View WorkOut Details"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent2"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:text="Set The Child Weight Week Wise "/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="Weeks"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Weight"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+
+
+                android:text=" 1-4 Week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_height="38dp"
+                android:layout_gravity="left"
+                android:text="  5-9 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="10-14 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="15-19 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="20-24 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="24-28 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="29-36 week"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="weight"
+                android:textSize="20dp" />
+
+
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/dietplan"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:text="Add Diet plan"
+            android:textColor="@color/white" />
+
+
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/complicationforwomen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            android:drawablePadding="16dp"
+            android:hint="Commplications"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="@android:color/black"
+            android:textSize="14dp" />
+
+
+
+
+
+        <Button
+            android:id="@+id/submitweight"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/remainderadd"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:text="Add Remainder"
+        android:layout_gravity="end"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/consultdoc"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Consult Docotr"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/viewconsultreport"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:text="Visit Report"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

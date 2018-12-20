@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.feish.application.Patient.FindRecipe">
+    <item
+        android:id="@+id/action_mycreatedreccipe"
+        android:orderInCategory="100"
+        android:title="My Created recipe"
+        app:showAsAction="always" />
+</menu>

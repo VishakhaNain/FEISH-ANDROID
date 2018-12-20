@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="10dp"
+    android:background="@color/grey"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:src="@drawable/doctor_images"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent3"
+            android:textSize="16dp"
+            android:text="Name XYZ"
+            android:id="@+id/donorname"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <com.app.feish.application.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/donorloc"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawableTint="@android:color/black"
+            android:text="Noida"
+            android:layout_height="wrap_content" />
+        <com.app.feish.application.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+           android:layout_marginLeft="10dp"
+            android:text="O+"
+            android:id="@+id/donorbgrpp"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content" />
+        <com.app.feish.application.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:text="MALE"
+            android:id="@+id/donorgender"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/colorAccent3"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/msgtodonor"
+            android:background="@drawable/rounded"
+            android:text="Send Message"/>
+    </LinearLayout>
+
+</LinearLayout>

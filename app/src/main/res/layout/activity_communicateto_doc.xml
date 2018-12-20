@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.CommunicatetoDoc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Drop your Message:"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent3"
+        android:layout_marginLeft="25dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Get a response within 5 minutes"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent3"
+        android:layout_marginLeft="25dp"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_confirmation_number_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <com.app.feish.application.customfonts.MyEditText
+            android:id="@+id/msgToID"
+            android:hint="Enter  name"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="#000"
+            android:background="@color/transparent"
+            android:padding="12dp"
+            android:drawablePadding="16dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Subject:"
+            android:visibility="gone"
+            android:textColor="#f60d0909"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="enter your sub here"
+            android:id="@+id/enterSubId"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border"
+            android:padding="7dp"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Message:"
+            android:textColor="@color/colorAccent1"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/enterMessgId"
+            android:textColor="@color/colorAccent"
+            android:inputType="textMultiLine"
+            android:background="@drawable/border"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:padding="4dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/submitMsgButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:textStyle="bold"
+          android:textColor="@color/white"
+        android:layout_gravity="center"
+      android:background="@drawable/rounded"/>
+        <Button
+            android:id="@+id/chooseFileId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+android:background="@drawable/rounded"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

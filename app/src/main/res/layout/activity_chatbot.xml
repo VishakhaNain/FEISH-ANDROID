@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <!--<Button
+            android:id="@+id/receive_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            style="@style/ButtonsWidget"
+            android:text="Receive" />-->
+
+        <EditText
+            android:id="@+id/texttosend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="#ffffff"
+            android:hint="How May I Help You?"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:padding="3dp"
+            android:scrollHorizontally="false" />
+
+        <!--<Button
+            android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            style="@style/ButtonsWidget"
+            android:text="Send" />-->
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:layout_weight="0.2"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_send"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

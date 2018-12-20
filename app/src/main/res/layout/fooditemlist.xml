@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/grocery"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkblue"
+            android:id="@+id/foodname"
+            android:text="Poha (1 Plate) "
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/foodcalories"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/darkblue"
+            android:text="50 calories"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/addfood"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/red"
+            android:text="Add In Diet List"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/recipemoredetail"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/puple"
+            android:text="More info"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

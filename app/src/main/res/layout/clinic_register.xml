@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="10dp"
+        >
+
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:background="@color/colorAccent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/clinic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Registration Details"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/header"
+        android:id="@+id/form2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent2"
+            android:textSize="18dp"
+            android:id="@+id/Cowner"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:text="Owner Details"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/owner_spinner"
+                android:entries="@array/salutation_spinner"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/oname"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter First Name"
+                android:inputType="text"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:padding="8dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/white"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/olname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:hint="Enter Last Name"
+                android:inputType="text"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/sym_action_call"
+                android:tint="@color/white"
+                android:padding="8dp"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/ophone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_email_black_24dp"
+                android:tint="@color/white"
+                android:layout_height="40dp" />
+            <com.app.feish.application.customfonts.MyEditText
+                android:id="@+id/oemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:textSize="14dp"
+                android:textColorHint="@android:color/black"
+                android:textColor="#000"
+                android:background="@color/transparent"
+                android:padding="12dp"
+                android:drawablePadding="16dp"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent2"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cclinic"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:text="Clinic Details"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:tint="@color/white"
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/ic_person_black_24dp"/>
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/cname"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Clinic Name"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:tint="@color/white"/>
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/cemail"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Clinic Email"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:tint="@color/white"/>
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/cpin"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Pincode"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+
+                    android:background="@color/colorAccent"
+                    android:src="@android:drawable/sym_action_call"
+                    android:tint="@color/white"/>
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/cmobile"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:tint="@color/white"/>
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/caddress"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Address"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+                      <LinearLayout
+                android:layout_width="match_parent"
+                          android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="@color/colorAccent"
+                    android:src="@drawable/ccity"
+                    android:tint="@color/white"
+                    />
+
+                <com.app.feish.application.customfonts.MyEditText
+                    android:id="@+id/ccity"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter City"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:background="@color/transparent"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/cardView1"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sign up"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <com.app.feish.application.customfonts.MyRegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="By Sign Up you agree all term and condition"
+            android:textColor="@android:color/darker_gray"/>
+        <com.app.feish.application.customfonts.MyRegulerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="login"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Already a member ? Login Here"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+<!--
+
+    <Button
+        android:id="@+id/submittt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Submittt"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+-->
+
+    <ProgressBar
+        android:id="@+id/clinicprogress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

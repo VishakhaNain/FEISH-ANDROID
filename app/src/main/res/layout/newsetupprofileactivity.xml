@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent3"
+    android:layout_height="60dp">
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/ic_arrow_back_black_24dp"
+    android:id="@+id/img_back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Create Profile"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        />
+</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Profile Details"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent3"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/uploadpImageID"
+                    android:layout_width="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
+                    android:src="@drawable/patienr"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/uploadpImageID"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinnerid1"
+                        android:background="@color/my_spinner_text_color"
+                        android:entries="@array/salutation_spinner"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/setupfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#000"
+                        android:background="@drawable/border1"
+                        android:hint="Enter First Name"
+                        android:padding="15dp"
+                        android:textColorHint="@color/colorAccent1"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:id="@+id/setuplastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border1"
+                        android:hint="Enter Last Name"
+                        android:padding="15dp"
+                        android:textColor="#000"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorAccent1"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Contact Details"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent3"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Email Address"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/setupemail"
+                android:enabled="false"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile number"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/setupmobile"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Genral Details"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent3"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Gender"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+            <RadioGroup
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:id="@+id/setupgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textSize="15sp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:textSize="15sp"
+                    android:id="@+id/radioFemale"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Marital Status"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/setupmarital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RadioButton
+                    android:id="@+id/marriedid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/married"
+
+                    android:textSize="15sp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:textSize="15sp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/unmarriedid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unmarried"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Occupation"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <Spinner
+                android:id="@+id/setupoccupation"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/occupation"
+                android:background="@drawable/border1"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Ethnicity"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <Spinner
+                android:id="@+id/setupethnicity"
+
+
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:entries="@array/ethnicity"
+                android:background="@drawable/border1"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Your Blood-Group"
+                android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <Spinner
+                android:id="@+id/setupbloodgroup"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:entries="@array/Blood_spinner"
+                android:background="@drawable/border1"
+
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Identity-type"
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <Spinner
+                android:id="@+id/setupidentityproof"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:entries="@array/identity_proof_entries"
+                android:background="@drawable/border1"
+
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Identity Number"
+
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Your Id Number"
+                android:id="@+id/identityno"
+                android:inputType="number"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+</LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Personal Information"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent3"
+            android:layout_marginLeft="25dp"
+            android:textSize="22sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Location"
+
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your Address"
+                android:id="@+id/setupaddress"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Height(In Inches)"
+
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Your Height"
+                android:id="@+id/setupheight"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Weight(In Kg)"
+
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Your Weight"
+                android:id="@+id/setupweight"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="BMI:"
+
+               android:textColor="@color/colorAccent1"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="BMI is"
+                android:id="@+id/setupbmi"
+                android:textColor="#000"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+                android:id="@+id/submitprofile"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="#fff"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Update Information"
+                android:textSize="15sp"
+                android:textAllCaps="false" />
+
+           </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

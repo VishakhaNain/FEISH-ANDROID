@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeblack"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/dayofweek"
+        android:text="Sunday"
+        />
+    <com.app.feish.application.customfonts.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeblack"
+        android:textSize="14dp"
+        android:id="@+id/time"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="09:00 AM - 07:00 PM "
+        />
+</LinearLayout>

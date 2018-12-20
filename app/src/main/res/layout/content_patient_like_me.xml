@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Patient.PatientLikeMe"
+    tools:showIn="@layout/activity_patient_like_me">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:layout_height="40dp" />
+        <Spinner
+            android:id="@+id/mcondtion_spinner"
+            android:entries="@array/condition"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+    <com.app.feish.application.customfonts.MyEditText
+        android:id="@+id/mhdesc"
+        android:hint="Short descripttion about medical problem...."
+        android:layout_marginTop="10dp"
+        android:lines="2"
+        android:layout_weight="0.8"
+        android:textSize="14dp"
+        android:inputType="textMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:textColor="#000"
+        android:background="@color/transparent"
+        android:padding="12dp"
+        android:drawablePadding="16dp"
+        />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:id="@+id/search_go"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:text="go"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/list"/>
+<ProgressBar
+    android:layout_width="80dp"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:layout_marginTop="10dp"
+    android:id="@+id/progressBar"
+    android:layout_height="80dp" />
+    <com.app.feish.application.customfonts.MyTextView
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent2"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"/>
+
+</LinearLayout>
